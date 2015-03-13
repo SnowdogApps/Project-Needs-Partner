@@ -186,7 +186,7 @@ class Application {
         if (self.status == nil || self.status!.isEmpty) {
             let userId = Defaults["user_id"].string
             if userId != nil && userId == self.user?.id {
-                return NSLocalizedString("Waiting for my approval", comment:"")
+                return NSLocalizedString("Waiting for approval", comment:"")
             } else {
                 return NSLocalizedString("Waiting for my approval", comment:"")
             }

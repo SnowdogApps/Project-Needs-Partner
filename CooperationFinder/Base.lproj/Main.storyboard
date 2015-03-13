@@ -92,7 +92,7 @@
         <!--Login Page View Controller-->
         <scene sceneID="uk7-dC-5sb">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="7zF-Zt-Pby" customClass="SDLoginPageViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="7zF-Zt-Pby" customClass="SDLoginPageViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mlm-tz-awj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,7 +102,7 @@
         <!--Welcome View-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="Welcome View" id="vXZ-lx-hvc" customClass="SDWelcomeViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome View" id="vXZ-lx-hvc" customClass="SDWelcomeViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -294,7 +294,7 @@
         <!--Projects-->
         <scene sceneID="GHL-YB-EP7">
             <objects>
-                <viewController id="ClK-5D-NrW" customClass="SDProjectsListViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ClK-5D-NrW" customClass="SDProjectsListViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lui-0I-BJo"/>
                         <viewControllerLayoutGuide type="bottom" id="the-Pk-jD8"/>
@@ -334,7 +334,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="131" id="Vqm-0S-DlB" customClass="SDProjectCell" customModule="CooperationFinder" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="131" id="Vqm-0S-DlB" customClass="SDProjectCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="171" width="320" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vqm-0S-DlB" id="PZM-g5-rKu">
@@ -363,7 +363,7 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26.02.2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJd-jM-728" customClass="SDBadgeLabel" customModule="CooperationFinder" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26.02.2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJd-jM-728" customClass="SDBadgeLabel" customModule="Project_Needs_Partner" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="73" width="50" height="16"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -373,7 +373,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUSTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf5-v5-wsW" customClass="SDBadgeLabel" customModule="CooperationFinder" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUSTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf5-v5-wsW" customClass="SDBadgeLabel" customModule="Project_Needs_Partner" customModuleProvider="target">
                                                     <rect key="frame" x="137" y="73" width="41" height="16"/>
                                                     <color key="backgroundColor" red="0.99215686270000003" green="0.63921568630000003" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -389,7 +389,7 @@
                                                         <constraint firstAttribute="width" constant="4" id="ayG-MF-au1"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMMERCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS3-Mq-TDf" customClass="SDBadgeLabel" customModule="CooperationFinder" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMMERCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS3-Mq-TDf" customClass="SDBadgeLabel" customModule="Project_Needs_Partner" customModuleProvider="target">
                                                     <rect key="frame" x="70" y="73" width="60" height="16"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -520,7 +520,7 @@
         <!--Project Details View Controller-->
         <scene sceneID="Wpm-fp-Nzo">
             <objects>
-                <viewController id="kRq-Pv-x4F" customClass="SDProjectDetailsViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kRq-Pv-x4F" customClass="SDProjectDetailsViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nqP-8a-nN3"/>
                         <viewControllerLayoutGuide type="bottom" id="9cJ-8N-bxl"/>
@@ -532,21 +532,21 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wU8-XP-K3r">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26.02.2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghm-dw-aKy" customClass="SDBadgeLabel" customModule="CooperationFinder" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26.02.2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghm-dw-aKy" customClass="SDBadgeLabel" customModule="Project_Needs_Partner" customModuleProvider="target">
                                         <rect key="frame" x="16" y="16" width="50" height="16"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="10"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMMERCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLr-he-CFd" customClass="SDBadgeLabel" customModule="CooperationFinder" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMMERCIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLr-he-CFd" customClass="SDBadgeLabel" customModule="Project_Needs_Partner" customModuleProvider="target">
                                         <rect key="frame" x="74" y="16" width="60" height="16"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="10"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUSTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyj-fq-IgM" customClass="SDBadgeLabel" customModule="CooperationFinder" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUSTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyj-fq-IgM" customClass="SDBadgeLabel" customModule="Project_Needs_Partner" customModuleProvider="target">
                                         <rect key="frame" x="141" y="16" width="41" height="16"/>
                                         <color key="backgroundColor" red="0.99215686274509807" green="0.63921568627450975" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="10"/>
@@ -669,7 +669,7 @@
                                             <segue destination="c3a-S3-ogf" kind="show" identifier="CandidatesSegue" id="Llc-Gj-QJN"/>
                                         </connections>
                                     </button>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qoq-z1-svG" customClass="TagCloudView" customModule="CooperationFinder" customModuleProvider="target">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qoq-z1-svG" customClass="TagCloudView" customModule="Project_Needs_Partner" customModuleProvider="target">
                                         <rect key="frame" x="8" y="192" width="304" height="20"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -793,13 +793,13 @@
         <!--Candidates-->
         <scene sceneID="da2-aN-iEy">
             <objects>
-                <tableViewController title="Candidates" id="c3a-S3-ogf" customClass="SDCandidatesListViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Candidates" id="c3a-S3-ogf" customClass="SDCandidatesListViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="kfl-Uz-xf5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CandidateCell" id="Tjw-o8-BHh" customClass="SDCandidateCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CandidateCell" id="Tjw-o8-BHh" customClass="SDCandidateCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tjw-o8-BHh" id="JOK-2w-FGa">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -838,7 +838,7 @@
                                     <segue destination="R3k-Q0-Dwl" kind="show" identifier="candidatesSegue" id="fb5-RA-czf"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlaceholderCell" id="MId-gt-mmp" customClass="SDPlaceholderCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlaceholderCell" id="MId-gt-mmp" customClass="SDPlaceholderCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MId-gt-mmp" id="MOR-7C-sUf">
@@ -876,7 +876,7 @@
         <!--Candidate Details View Controller-->
         <scene sceneID="wp7-I1-L8r">
             <objects>
-                <viewController id="R3k-Q0-Dwl" customClass="SDCandidateDetailsViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="R3k-Q0-Dwl" customClass="SDCandidateDetailsViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="id4-cV-Dyg"/>
                         <viewControllerLayoutGuide type="bottom" id="vjY-Py-oYn"/>
@@ -909,7 +909,7 @@
                                             <action selector="approveButtonTapped:" destination="R3k-Q0-Dwl" eventType="touchUpInside" id="JDi-JQ-J1z"/>
                                         </connections>
                                     </button>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-Gn-kmf" customClass="TagCloudView" customModule="CooperationFinder" customModuleProvider="target">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-Gn-kmf" customClass="TagCloudView" customModule="Project_Needs_Partner" customModuleProvider="target">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxj-86-dWN">
@@ -1001,7 +1001,7 @@
         <!--Login View-->
         <scene sceneID="1mh-Ih-fUq">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" title="Login View" id="lou-BP-gwI" customClass="SDLoginViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="Login View" id="lou-BP-gwI" customClass="SDLoginViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PCd-BC-cOB"/>
                         <viewControllerLayoutGuide type="bottom" id="8qg-SV-ijH"/>
@@ -1177,7 +1177,7 @@
         <!--Registration View-->
         <scene sceneID="JJR-Ck-H1X">
             <objects>
-                <viewController storyboardIdentifier="RegisterViewController" title="Registration View" id="idB-iw-42h" customClass="SDRegisterViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" title="Registration View" id="idB-iw-42h" customClass="SDRegisterViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sxs-Kg-oWn"/>
                         <viewControllerLayoutGuide type="bottom" id="2yG-qG-0gT"/>
@@ -1444,7 +1444,7 @@
         <!--Profile-->
         <scene sceneID="v14-sD-OEs">
             <objects>
-                <tableViewController id="QUx-Ck-NB9" customClass="SDProfileViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="QUx-Ck-NB9" customClass="SDProfileViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JSa-Cg-DZt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1456,7 +1456,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTextFieldCell" id="FQa-wM-jiC" customClass="SDTextFieldCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTextFieldCell" id="FQa-wM-jiC" customClass="SDTextFieldCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FQa-wM-jiC" id="Zf4-DJ-Tk2">
@@ -1491,7 +1491,7 @@
                                     <outlet property="titleLabel" destination="hDa-am-yvz" id="jtK-OV-ox9"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTextViewCell" rowHeight="120" id="yP6-jt-6wX" customClass="SDTextViewCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTextViewCell" rowHeight="120" id="yP6-jt-6wX" customClass="SDTextViewCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yP6-jt-6wX" id="ZTS-5x-nc1">
@@ -1516,7 +1516,7 @@
                                     <outlet property="textView" destination="YnA-gp-zvl" id="HKb-NU-mTv"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTagsCell" rowHeight="80" id="LUt-BC-Rlf" customClass="SDTagsCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTagsCell" rowHeight="80" id="LUt-BC-Rlf" customClass="SDTagsCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LUt-BC-Rlf" id="WU2-jQ-0yw">
@@ -1528,7 +1528,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWc-2J-Ncn" customClass="TagCloudView" customModule="CooperationFinder" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWc-2J-Ncn" customClass="TagCloudView" customModule="Project_Needs_Partner" customModuleProvider="target">
                                             <rect key="frame" x="8" y="32" width="304" height="40"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
@@ -1580,7 +1580,7 @@
         <!--Select tags-->
         <scene sceneID="5F5-af-Rv9">
             <objects>
-                <tableViewController title="Select tags" id="f00-zf-73B" customClass="SDTagsListViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Select tags" id="f00-zf-73B" customClass="SDTagsListViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="w6F-GO-wyb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1607,7 +1607,7 @@
         <!--Add Position-->
         <scene sceneID="aNE-eY-vgj">
             <objects>
-                <viewController id="3Dg-DE-Eqw" customClass="SDAddPositionViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Dg-DE-Eqw" customClass="SDAddPositionViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D0f-5h-Mk5"/>
                         <viewControllerLayoutGuide type="bottom" id="dao-HT-0zf"/>
@@ -1703,13 +1703,13 @@
         <!--My applications-->
         <scene sceneID="qaw-C7-jjS">
             <objects>
-                <tableViewController id="Zcw-OC-HhX" customClass="SDMyApplicationsViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Zcw-OC-HhX" customClass="SDMyApplicationsViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="108" sectionHeaderHeight="22" sectionFooterHeight="22" id="NiK-5d-c4m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ApplicationCell" rowHeight="108" id="hBF-Nt-pLk" customClass="SDApplicationCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ApplicationCell" rowHeight="108" id="hBF-Nt-pLk" customClass="SDApplicationCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hBF-Nt-pLk" id="deD-fj-9xh">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1762,7 +1762,7 @@
                                     <outlet property="statusLabel" destination="8Er-2b-x2z" id="sVF-17-kGH"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlaceholderCell" rowHeight="80" id="MvW-pM-Zof" customClass="SDPlaceholderCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlaceholderCell" rowHeight="80" id="MvW-pM-Zof" customClass="SDPlaceholderCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MvW-pM-Zof" id="7iG-Oe-lx6">
@@ -1826,7 +1826,7 @@
         <!--Filter-->
         <scene sceneID="Frf-Y5-bVX">
             <objects>
-                <tableViewController id="Nmj-MM-kNS" customClass="SDFilterViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Nmj-MM-kNS" customClass="SDFilterViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="drM-6b-1UG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1838,7 +1838,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="rBo-2W-k9L" customClass="SwitchCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="rBo-2W-k9L" customClass="SwitchCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rBo-2W-k9L" id="aaH-9t-jha">
@@ -1867,7 +1867,7 @@
                                     <outlet property="titleLabel" destination="hHs-Yf-oIL" id="fhI-lQ-yJx"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDPositionCell" rowHeight="102" id="rdj-Au-dBA" customClass="SDPositionCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDPositionCell" rowHeight="102" id="rdj-Au-dBA" customClass="SDPositionCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rdj-Au-dBA" id="WYJ-dU-LKr">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1881,7 +1881,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xX-Eo-Pwi" customClass="TagCloudView" customModule="CooperationFinder" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xX-Eo-Pwi" customClass="TagCloudView" customModule="Project_Needs_Partner" customModuleProvider="target">
                                             <rect key="frame" x="8" y="45" width="304" height="43"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
@@ -1927,7 +1927,7 @@
         <!--Select tags-->
         <scene sceneID="SYh-Iu-Pfg">
             <objects>
-                <tableViewController id="Ezx-6q-iaD" customClass="SDTagsListViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Ezx-6q-iaD" customClass="SDTagsListViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cRt-3d-XUE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1975,7 +1975,7 @@
         <!--Add project-->
         <scene sceneID="XLf-iA-jEh">
             <objects>
-                <tableViewController id="c3P-NU-GAC" customClass="SDNewProjectTableViewController" customModule="CooperationFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="c3P-NU-GAC" customClass="SDNewProjectTableViewController" customModule="Project_Needs_Partner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="qaB-j3-WEs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1988,7 +1988,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTextFieldCell" id="Wzp-6c-Qbt" customClass="SDTextFieldCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTextFieldCell" id="Wzp-6c-Qbt" customClass="SDTextFieldCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wzp-6c-Qbt" id="XOc-1X-s4M">
@@ -2005,7 +2005,7 @@
                                     <outlet property="textField" destination="wno-bK-P1a" id="6ev-8W-EA7"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTextViewCell" rowHeight="200" id="WbA-FA-9Ji" customClass="SDTextViewCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDTextViewCell" rowHeight="200" id="WbA-FA-9Ji" customClass="SDTextViewCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WbA-FA-9Ji" id="x28-DA-e83">
@@ -2030,7 +2030,7 @@
                                     <outlet property="textView" destination="Q4s-A9-Kvf" id="oEx-3R-PoZ"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="ILk-my-bpx" customClass="SwitchCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="ILk-my-bpx" customClass="SwitchCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ILk-my-bpx" id="eeh-0z-AJe">
@@ -2059,7 +2059,7 @@
                                     <outlet property="titleLabel" destination="au1-5q-eMV" id="MAT-Fd-KuI"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDPositionCell" rowHeight="102" id="Hau-Bn-zNq" customClass="SDPositionCell" customModule="CooperationFinder" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SDPositionCell" rowHeight="102" id="Hau-Bn-zNq" customClass="SDPositionCell" customModule="Project_Needs_Partner" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hau-Bn-zNq" id="d3I-Bq-YcS">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -2073,7 +2073,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82A-Fc-lKo" customClass="TagCloudView" customModule="CooperationFinder" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82A-Fc-lKo" customClass="TagCloudView" customModule="Project_Needs_Partner" customModuleProvider="target">
                                             <rect key="frame" x="8" y="37" width="304" height="51"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
