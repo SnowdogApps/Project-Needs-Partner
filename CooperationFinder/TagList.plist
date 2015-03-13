@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Ekonomia globalna i menedżerska</string>
+	<string>Zasoby ludzkie w organizacji</string>
+	<string>Polityka i gospodarka żywnościowa</string>
+	<string>Publicystyka ekonomiczna</string>
+	<string>Strategie biznesu</string>
+	<string>Bankowość</string>
+	<string>Finanse, audyt i podatki</string>
+	<string>Rachunkowość i skarbowość</string>
+	<string>Ubezpieczenia gospodarcze</string>
+	<string>Zarządzanie finansami prywatnymi</string>
+	<string>Komunikacja społeczna</string>
+	<string>Analityka usług finansowych</string>
+	<string>Rozwój miast i regionów</string>
+	<string>Handel i marketing</string>
+	<string>Wycena nieruchomości</string>
+	<string>Zarządzanie projektami</string>
+</array>
+</plist>
