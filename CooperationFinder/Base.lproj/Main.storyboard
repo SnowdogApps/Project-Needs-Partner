@@ -64,6 +64,7 @@
             <string>TitilliumWeb-SemiBold</string>
             <string>TitilliumWeb-SemiBold</string>
             <string>TitilliumWeb-SemiBold</string>
+            <string>TitilliumWeb-SemiBold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -909,11 +910,11 @@
                                             <action selector="approveButtonTapped:" destination="R3k-Q0-Dwl" eventType="touchUpInside" id="JDi-JQ-J1z"/>
                                         </connections>
                                     </button>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-Gn-kmf" customClass="TagCloudView" customModule="Project_Needs_Partner" customModuleProvider="target">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-Gn-kmf" customClass="TagCloudView" customModule="Project_Needs_Partner" customModuleProvider="target">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxj-86-dWN">
-                                        <rect key="frame" x="16" y="139" width="288" height="21"/>
+                                        <rect key="frame" x="16" y="139" width="288" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.41960784309999999" green="0.42745098040000001" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -933,16 +934,34 @@
                                             <action selector="denyButtonTapped:" destination="R3k-Q0-Dwl" eventType="touchUpInside" id="xXN-cT-xhz"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gh8-qX-YYy">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="47.5"/>
+                                        <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47.5" id="76R-B8-Fjh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                                        <state key="normal" title="Contact">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactButtonTapped:" destination="R3k-Q0-Dwl" eventType="touchUpInside" id="U0e-xb-MHI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Pdp-CP-C8T" firstAttribute="leading" secondItem="Y1V-t0-zYl" secondAttribute="trailing" id="2HY-P5-INP"/>
                                     <constraint firstItem="Y1V-t0-zYl" firstAttribute="top" secondItem="wqQ-mt-fR2" secondAttribute="top" id="3ek-Uo-yyA"/>
                                     <constraint firstAttribute="trailing" secondItem="Pdp-CP-C8T" secondAttribute="trailing" id="6jK-wY-5Aj"/>
                                     <constraint firstItem="6e2-Gn-kmf" firstAttribute="leading" secondItem="wqQ-mt-fR2" secondAttribute="leading" constant="8" id="Cud-CL-wEB"/>
+                                    <constraint firstItem="iN8-TL-Hbj" firstAttribute="top" secondItem="Gh8-qX-YYy" secondAttribute="bottom" constant="8.5" id="G9A-qw-QF2"/>
+                                    <constraint firstItem="iN8-TL-Hbj" firstAttribute="top" secondItem="wqQ-mt-fR2" secondAttribute="top" constant="56" id="JJd-t3-IN4"/>
                                     <constraint firstItem="yxj-86-dWN" firstAttribute="leading" secondItem="wqQ-mt-fR2" secondAttribute="leading" constant="16" id="KCW-cm-v2w"/>
                                     <constraint firstAttribute="bottom" secondItem="yxj-86-dWN" secondAttribute="bottom" constant="16" id="MJs-Eh-PbB"/>
                                     <constraint firstItem="iN8-TL-Hbj" firstAttribute="top" secondItem="wqQ-mt-fR2" secondAttribute="top" constant="56" id="Nta-tO-VC6"/>
                                     <constraint firstItem="iN8-TL-Hbj" firstAttribute="top" secondItem="Y1V-t0-zYl" secondAttribute="bottom" constant="8" id="UFv-r1-1Zj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gh8-qX-YYy" secondAttribute="trailing" id="UVH-Fp-86V"/>
                                     <constraint firstAttribute="trailing" secondItem="yxj-86-dWN" secondAttribute="trailing" constant="16" id="Usn-uh-PIN"/>
                                     <constraint firstItem="iN8-TL-Hbj" firstAttribute="leading" secondItem="wqQ-mt-fR2" secondAttribute="leading" constant="16" id="Utx-h6-hMe"/>
                                     <constraint firstItem="6e2-Gn-kmf" firstAttribute="top" secondItem="iN8-TL-Hbj" secondAttribute="bottom" constant="8" id="WPd-YY-KdB"/>
@@ -954,13 +973,17 @@
                                     <constraint firstItem="yxj-86-dWN" firstAttribute="top" secondItem="6e2-Gn-kmf" secondAttribute="bottom" constant="8" id="o8e-93-Ml9"/>
                                     <constraint firstAttribute="trailing" secondItem="iN8-TL-Hbj" secondAttribute="trailing" constant="16" id="p6a-95-zn0"/>
                                     <constraint firstItem="iN8-TL-Hbj" firstAttribute="top" secondItem="wqQ-mt-fR2" secondAttribute="top" constant="56" id="qc2-YG-RLT"/>
+                                    <constraint firstItem="Gh8-qX-YYy" firstAttribute="top" secondItem="wqQ-mt-fR2" secondAttribute="top" id="qvj-qP-7d1"/>
+                                    <constraint firstItem="Gh8-qX-YYy" firstAttribute="leading" secondItem="wqQ-mt-fR2" secondAttribute="leading" id="yt2-LB-APs"/>
                                     <constraint firstItem="Y1V-t0-zYl" firstAttribute="leading" secondItem="wqQ-mt-fR2" secondAttribute="leading" id="zCs-rR-gEh"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="mkU-cC-ISj"/>
+                                        <exclude reference="G9A-qw-QF2"/>
                                         <exclude reference="Nta-tO-VC6"/>
                                         <exclude reference="UFv-r1-1Zj"/>
+                                        <exclude reference="qc2-YG-RLT"/>
                                     </mask>
                                 </variation>
                             </scrollView>
@@ -985,10 +1008,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="approveButton" destination="Y1V-t0-zYl" id="Jwl-d3-2BA"/>
+                        <outlet property="contactButton" destination="Gh8-qX-YYy" id="ceS-pM-bVp"/>
                         <outlet property="denyButton" destination="Pdp-CP-C8T" id="Tru-Y0-1bX"/>
                         <outlet property="descriptionView" destination="yxj-86-dWN" id="FBL-NL-kaC"/>
                         <outlet property="tagCloudView" destination="6e2-Gn-kmf" id="tN7-BB-aBL"/>
-                        <outlet property="titleTop" destination="qc2-YG-RLT" id="YCe-PZ-axv"/>
+                        <outlet property="titleTop" destination="JJd-t3-IN4" id="mz7-ND-Kfx"/>
                         <outlet property="userFullName" destination="iN8-TL-Hbj" id="pl4-4y-huR"/>
                         <segue destination="bde-qc-582" kind="unwind" identifier="UnwindSegue" unwindAction="unwindToCandidatesList:" id="rYS-NK-PHy"/>
                     </connections>
