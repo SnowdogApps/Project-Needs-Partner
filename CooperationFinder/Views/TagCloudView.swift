@@ -87,7 +87,7 @@ class TagCloudView: UIView {
     }
     
     private func removeOldSubviews() {
-        let views = self.subviews as [UIView]
+        let views = self.subviews as! [UIView]
         for view in views {
             view.removeFromSuperview()
         }

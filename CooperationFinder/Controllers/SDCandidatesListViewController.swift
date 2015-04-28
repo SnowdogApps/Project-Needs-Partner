@@ -71,12 +71,12 @@ class SDCandidatesListViewController: UITableViewController, UITableViewDelegate
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell!
         if let application = self.applicationForIndexPath(indexPath) {
-            let appCell = tableView.dequeueReusableCellWithIdentifier("CandidateCell") as SDCandidateCell!
+            let appCell = tableView.dequeueReusableCellWithIdentifier("CandidateCell") as! SDCandidateCell!
             appCell.nameLabel?.text = application.user?.fullname
             appCell.companyLabel?.text = application.user?.company
             cell = appCell
         } else {
-            let placeholderCell = tableView.dequeueReusableCellWithIdentifier("PlaceholderCell") as SDPlaceholderCell!
+            let placeholderCell = tableView.dequeueReusableCellWithIdentifier("PlaceholderCell") as! SDPlaceholderCell!
             placeholderCell.titleLabel?.text = NSLocalizedString("There are no applications", comment: "")
             cell = placeholderCell
         }

@@ -92,13 +92,13 @@ class SDProfileViewController: UITableViewController, UITextViewDelegate, SDTags
         if (indexPath.section == self.simpleDataSection) {
             cell = self.cellForSimpleDataSection(indexPath: indexPath)
         } else if (indexPath.section == self.descriptionSection) {
-            let textViewCell = tableView.dequeueReusableCellWithIdentifier("SDTextViewCell", forIndexPath: indexPath) as SDTextViewCell
+            let textViewCell = tableView.dequeueReusableCellWithIdentifier("SDTextViewCell", forIndexPath: indexPath) as! SDTextViewCell
             textViewCell.textView.delegate = self
             textViewCell.textView.text = self.loggedUser?.desc
             textViewCell.textView.delegate = self
             cell = textViewCell
         } else if (indexPath.section == self.tagsSection) {
-            let tagsCell = tableView.dequeueReusableCellWithIdentifier("SDTagsCell", forIndexPath: indexPath) as SDTagsCell
+            let tagsCell = tableView.dequeueReusableCellWithIdentifier("SDTagsCell", forIndexPath: indexPath) as! SDTagsCell
             tagsCell.titleLabel.text = NSLocalizedString("Skills", comment:"")
             tagsCell.tagCloudView.tags = self.loggedUser?.tags
             tagsCell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
@@ -111,7 +111,7 @@ class SDProfileViewController: UITableViewController, UITextViewDelegate, SDTags
     }
     
     func cellForSimpleDataSection(#indexPath: NSIndexPath) -> UITableViewCell {
-        let textfieldCell = tableView.dequeueReusableCellWithIdentifier("SDTextFieldCell", forIndexPath: indexPath) as SDTextFieldCell
+        let textfieldCell = tableView.dequeueReusableCellWithIdentifier("SDTextFieldCell", forIndexPath: indexPath) as! SDTextFieldCell
         
         var title : String?
         var value : String?
@@ -166,7 +166,7 @@ class SDProfileViewController: UITableViewController, UITextViewDelegate, SDTags
             height = 120.0
         } else if (indexPath.section == self.tagsSection) {
             dispatch_once(&once_token, { () -> Void in
-                self.sizingCell = self.tableView.dequeueReusableCellWithIdentifier("SDTagsCell") as SDTagsCell
+                self.sizingCell = self.tableView.dequeueReusableCellWithIdentifier("SDTagsCell") as! SDTagsCell
             })
             self.sizingCell.tagCloudView.tags = self.loggedUser?.tags
             let size = self.sizingCell.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
@@ -206,7 +206,7 @@ class SDProfileViewController: UITableViewController, UITextViewDelegate, SDTags
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "TagsSegue") {
-            var controller = segue.destinationViewController as SDTagsListViewController
+            var controller = segue.destinationViewController as! SDTagsListViewController
             controller.selectedTags = self.loggedUser?.tags
             controller.delegate = self
         }
@@ -218,7 +218,7 @@ class SDProfileViewController: UITableViewController, UITextViewDelegate, SDTags
     
     // MARK: SDTagsListViewControllerDelegate
     
-    func setTags(tags: [String]?) {
+    func applyTags(tags: [String]?) {
         self.loggedUser?.tags = tags
         self.refreshFlag = false
         self.tableView.reloadData()

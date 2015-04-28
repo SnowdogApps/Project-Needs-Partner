@@ -94,7 +94,7 @@ class Project {
             if (error == nil) {
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
                     var projects : [Project] = []
-                    let pResult = result as [PFObject]
+                    let pResult = result as! [PFObject]
                     for pProject: PFObject in pResult {
                         let project = Project.parseProject(pProject)
                         projects.append(project)
@@ -142,7 +142,7 @@ class Project {
         }
         
         let posRelation = parseProject.relationForKey("positions");
-        let pPositions = posRelation.query().findObjects() as [PFObject]!
+        let pPositions = posRelation.query().findObjects() as! [PFObject]!
         var positions : [Position] = []
         for pPosition : PFObject in pPositions {
             let position = Position.parsePosition(pPosition)
@@ -158,7 +158,7 @@ class Project {
         if (parseApplication) {
             let query = PFQuery(className: "Application")
             query.whereKey("project", equalTo: parseProject)
-            let pApplications = query.findObjects() as [PFObject]
+            let pApplications = query.findObjects() as! [PFObject]
             
             var applications : [Application] = [];
             for pApplication : PFObject in pApplications {

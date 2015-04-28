@@ -10,7 +10,7 @@ import UIKit
 
 protocol SDTagsListViewControllerDelegate : class {
     
-    func setTags(tags: [String]?)
+    func applyTags(tags: [String]?)
     
 }
 
@@ -53,7 +53,7 @@ class SDTagsListViewController: UITableViewController {
         let path = NSBundle.mainBundle().pathForResource("TagList", ofType: "plist")
         myArray = NSArray(contentsOfFile: path!)
         
-        self.tags = myArray as [String]?
+        self.tags = myArray as! [String]?
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -63,7 +63,7 @@ class SDTagsListViewController: UITableViewController {
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        self.delegate?.setTags(self.selectedTags)
+        self.delegate?.applyTags(self.selectedTags)
     }
     
     override func didReceiveMemoryWarning() {
@@ -87,7 +87,7 @@ class SDTagsListViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("StandardCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("StandardCell", forIndexPath: indexPath) as! UITableViewCell
         
         let tag = self.tags![indexPath.row]
         cell.textLabel?.text = tag

@@ -57,20 +57,20 @@ class SDNewProjectTableViewController: UITableViewController, UITextFieldDelegat
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell = UITableViewCell()
         if (indexPath.section == 0) {
-            let textfieldCell = tableView.dequeueReusableCellWithIdentifier("SDTextFieldCell", forIndexPath: indexPath) as SDTextFieldCell
+            let textfieldCell = tableView.dequeueReusableCellWithIdentifier("SDTextFieldCell", forIndexPath: indexPath) as! SDTextFieldCell
             textfieldCell.textField?.text = self.project.name
             textfieldCell.textField?.placeholder = "Project name"
             textfieldCell.textField?.addTarget(self, action: "tfValueChanged:", forControlEvents: UIControlEvents.EditingChanged)
             cell = textfieldCell
         } else if (indexPath.section == 1) {
-            let textViewCell = tableView.dequeueReusableCellWithIdentifier("SDTextViewCell", forIndexPath: indexPath) as SDTextViewCell
+            let textViewCell = tableView.dequeueReusableCellWithIdentifier("SDTextViewCell", forIndexPath: indexPath) as! SDTextViewCell
             textViewCell.textView.delegate = self
             textViewCell.textView.text = self.project.desc
             cell = textViewCell
         } else if (indexPath.section == 2) {
-            let switchCell = tableView.dequeueReusableCellWithIdentifier("SwitchCell", forIndexPath: indexPath) as SwitchCell
+            let switchCell = tableView.dequeueReusableCellWithIdentifier("SwitchCell", forIndexPath: indexPath) as! SwitchCell
             switchCell.titleLabel.text = "Commercial"
-            switchCell.switchView.setOn(self.project.commercial? == true, animated: false)
+            switchCell.switchView.setOn(self.project.commercial == true, animated: false)
             switchCell.switchView.addTarget(self, action: "switchDidChange:", forControlEvents: UIControlEvents.ValueChanged)
             cell = switchCell
         } else if (indexPath.section == 3) {
@@ -81,12 +81,12 @@ class SDNewProjectTableViewController: UITableViewController, UITextFieldDelegat
             }
             
             if (indexPath.row == (counter - 1)) {
-                cell = tableView.dequeueReusableCellWithIdentifier("StandardCell", forIndexPath: indexPath) as UITableViewCell
+                cell = tableView.dequeueReusableCellWithIdentifier("StandardCell", forIndexPath: indexPath) as! UITableViewCell
                 cell.textLabel?.text = "Add job offer"
             } else {
                 
                 let position = self.project.positions![indexPath.row]
-                var positionCell = tableView.dequeueReusableCellWithIdentifier("SDPositionCell", forIndexPath: indexPath) as SDPositionCell
+                var positionCell = tableView.dequeueReusableCellWithIdentifier("SDPositionCell", forIndexPath: indexPath) as! SDPositionCell
                 self.configurePositionCell(positionCell, position: position)
                 
                 cell = positionCell
@@ -160,7 +160,7 @@ class SDNewProjectTableViewController: UITableViewController, UITextFieldDelegat
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "AddPositionSegue") {
-            var destController = segue.destinationViewController as SDAddPositionViewController
+            var destController = segue.destinationViewController as! SDAddPositionViewController
             destController.delegate = self
         }
     }
@@ -221,7 +221,7 @@ class SDNewProjectTableViewController: UITableViewController, UITextFieldDelegat
         var error = false
         var nameEmpty = NSLocalizedString("Project name cannot be empty", comment: "")
         if let name = self.project.name {
-            if (countElements(name) == 0) {
+            if (count(name) == 0) {
                 errorText += (nameEmpty + "\n")
                 error = true
             }

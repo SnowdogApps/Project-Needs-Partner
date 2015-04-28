@@ -8,7 +8,7 @@
 
 protocol SDFilterViewControllerDelegate : class {
     
-    func setTags(tags: [String]?, status: String?, trustedOnly: Bool?, commercial: Bool?)
+    func applyTags(tags: [String]?, status: String?, trustedOnly: Bool?, commercial: Bool?)
     
 }
 
@@ -75,12 +75,12 @@ class SDFilterViewController: UITableViewController, UITableViewDelegate, UITabl
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("StandardCell") as UITableViewCell
+        var cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("StandardCell") as! UITableViewCell
         
         var text : String
         
         if (indexPath.section == 0) {
-            var positionCell = tableView.dequeueReusableCellWithIdentifier("SDPositionCell", forIndexPath: indexPath) as SDPositionCell
+            var positionCell = tableView.dequeueReusableCellWithIdentifier("SDPositionCell", forIndexPath: indexPath) as! SDPositionCell
             self.configurePositionCell(positionCell)
             cell = positionCell
         } else if (indexPath.section == 1) {
@@ -93,7 +93,7 @@ class SDFilterViewController: UITableViewController, UITableViewDelegate, UITabl
         } else if (indexPath.section == 2) {
             var switchCell = tableView.dequeueReusableCellWithIdentifier("SwitchCell") as? SwitchCell
             switchCell?.titleLabel.text = "Only trusted"
-            switchCell?.switchView.setOn(self.trustedOnly? == true, animated: false)
+            switchCell?.switchView.setOn(self.trustedOnly == true, animated: false)
             switchCell?.switchView.addTarget(self, action: "switchDidChange:", forControlEvents: UIControlEvents.ValueChanged)
             cell = switchCell!
         } else if (indexPath.section == 3) {
@@ -155,16 +155,16 @@ class SDFilterViewController: UITableViewController, UITableViewDelegate, UITabl
         self.trustedOnly = sender.on
     }
     
-    func setTags(tags: [String]?) {
+    func applyTags(tags: [String]?) {
         self.tags = tags
         self.tableView.reloadData()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "UnwindSegue") {
-            self.delegate?.setTags(self.tags, status: self.status, trustedOnly: self.trustedOnly, commercial: self.commercial)
+            self.delegate?.applyTags(self.tags, status: self.status, trustedOnly: self.trustedOnly, commercial: self.commercial)
         } else if (segue.identifier == "TagsSegue") {
-            let destController = segue.destinationViewController as SDTagsListViewController
+            let destController = segue.destinationViewController as! SDTagsListViewController
             destController.selectedTags = self.tags
             destController.delegate = self
         }

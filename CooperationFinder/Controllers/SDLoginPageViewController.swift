@@ -73,9 +73,9 @@ class SDLoginPageViewController: UIPageViewController, UIPageViewControllerDataS
 extension UIPageViewController {
     func setPageViewControllerScrollEnabled(enabled : Bool)
     {
-        for view : UIView in self.view.subviews as [UIView] {
+        for view : UIView in self.view.subviews as! [UIView] {
             if (view.isKindOfClass(UIScrollView.self)) {
-                let scroll : UIScrollView = view as UIScrollView
+                let scroll : UIScrollView = view as! UIScrollView
                 scroll.scrollEnabled = enabled
                 return
             }

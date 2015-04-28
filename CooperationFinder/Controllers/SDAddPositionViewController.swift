@@ -30,7 +30,7 @@ class SDAddPositionViewController: UIViewController, UITableViewDataSource, UITa
         let path = NSBundle.mainBundle().pathForResource("TagList", ofType: "plist")
         myArray = NSArray(contentsOfFile: path!)
         
-        self.tags = myArray as [String]
+        self.tags = myArray as! [String]
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +44,7 @@ class SDAddPositionViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("StandardCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("StandardCell", forIndexPath: indexPath) as! UITableViewCell
         
         let tag = self.tags[indexPath.row]
         cell.textLabel?.text = tag
@@ -106,7 +106,7 @@ class SDAddPositionViewController: UIViewController, UITableViewDataSource, UITa
         var error = false
         var nameEmpty = NSLocalizedString("Position name cannot be empty", comment: "")
         if let name = self.position.name {
-            if (countElements(name) == 0) {
+            if (count(name) == 0) {
                 errorText += (nameEmpty + "\n")
                 error = true
             }

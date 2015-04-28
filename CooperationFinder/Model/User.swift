@@ -157,12 +157,18 @@ class User {
     }
 
     class private func hashPassword(password: String) -> String? {
-        let hashString = (password + kSalt) as NSString
-        return sha256Hash(hashString)
+        let hashString = (password + kSalt) as NSString?
+        return sha256Hash(hashString) as? String
     }
     
-    class private func sha256Hash(string : NSString) -> NSString? {
-        let data : NSData! = string.dataUsingEncoding(NSUTF8StringEncoding)
+    class private func sha256Hash(string : NSString?) -> NSString? {
+        let data : NSData!;
+        if (string != nil) {
+            data = string!.dataUsingEncoding(NSUTF8StringEncoding)
+        } else {
+            data = nil
+        }
+        
         if (data != nil) {
             let res = NSMutableData(length: Int(CC_SHA256_DIGEST_LENGTH))
             CC_SHA256(data.bytes, CC_LONG(data.length), UnsafeMutablePointer(res!.mutableBytes))

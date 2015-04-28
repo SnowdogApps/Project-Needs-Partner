@@ -82,7 +82,7 @@ class Application {
         if (error == nil) {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
                 var applications : [Application] = []
-                let pResult = result as [PFObject]
+                let pResult = result as! [PFObject]
                 for pApplication: PFObject in pResult {
                     let application = Application.parseApplication(pApplication, includeProject: true)
                     applications.append(application)

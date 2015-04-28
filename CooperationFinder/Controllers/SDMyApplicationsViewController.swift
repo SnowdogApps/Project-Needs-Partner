@@ -83,11 +83,11 @@ class SDMyApplicationsViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell : UITableViewCell!
         if let application = self.applicationForIndexPath(indexPath) {
-            let appCell = tableView.dequeueReusableCellWithIdentifier("ApplicationCell") as SDApplicationCell!
+            let appCell = tableView.dequeueReusableCellWithIdentifier("ApplicationCell") as! SDApplicationCell!
             self.configureApplicationCell(appCell, application: application)
             cell = appCell
         } else {
-            let placeholderCell = tableView.dequeueReusableCellWithIdentifier("PlaceholderCell") as SDPlaceholderCell!
+            let placeholderCell = tableView.dequeueReusableCellWithIdentifier("PlaceholderCell")as! SDPlaceholderCell!
             placeholderCell.titleLabel?.text = NSLocalizedString("There are no applications", comment: "")
             cell = placeholderCell
         }

@@ -79,7 +79,7 @@ class SDProjectsListViewController: UIViewController, UISearchDisplayDelegate, U
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: SDProjectCell = self.tableView.dequeueReusableCellWithIdentifier("ProjectCell") as SDProjectCell
+        let cell: SDProjectCell = self.tableView.dequeueReusableCellWithIdentifier("ProjectCell") as! SDProjectCell
         let project: Project? = self.projectAtIndexPath(indexPath, tableView: tableView)
         self.configureCell(cell, forProject: project);
         return cell
@@ -175,7 +175,7 @@ class SDProjectsListViewController: UIViewController, UISearchDisplayDelegate, U
                 
             }
         } else if (segue.identifier == "FilterSegue") {
-            let destinationController = segue.destinationViewController as UINavigationController
+            let destinationController = segue.destinationViewController as! UINavigationController
             let filterController = destinationController.viewControllers.first as? SDFilterViewController
             filterController?.tags = self.viewModel?.tags
             filterController?.status = self.viewModel?.status
@@ -195,7 +195,7 @@ class SDProjectsListViewController: UIViewController, UISearchDisplayDelegate, U
     
     // MARK: SDFilterViewControllerDelegate
     
-    func setTags(tags: [String]?, status: String?, trustedOnly: Bool?, commercial: Bool?) {
+    func applyTags(tags: [String]?, status: String?, trustedOnly: Bool?, commercial: Bool?) {
         self.viewModel?.tags = tags
         self.viewModel?.status = status
         self.viewModel?.trustedOnly = trustedOnly
